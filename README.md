@@ -281,23 +281,11 @@ The last step is calling one of previous declarated methods in react native as f
 ### Example using native module attaching device subscription by id
 
 ``` javascript
+// Example using native module attaching device subscription by id 
 const {NPushModule} = ReactNative.NativeModules;
-
-...
-
-// Example 
-
-  const onPress = () => {
-    NPushModule.setContactById('000T39KL');
-  };
-
-  return (
-    <Button
-      title="Click to set Contact by Id "
-      color="#841584"
-      onPress={onPress}
-    />
-  );
+...  
+ NPushModule.setContactById('000T39KL');
+...  
 ```
 
 If everything is done. You will see the following lines in your application log :
